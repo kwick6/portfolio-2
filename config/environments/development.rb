@@ -9,6 +9,9 @@ Scottsportfolio::Application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  # To use Font Awesome with a Rails app and the asset pipeline
+  config.assets.precompile += %w(.svg .eot .woff .ttf)
+
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
